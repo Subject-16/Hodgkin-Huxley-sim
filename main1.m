@@ -14,11 +14,11 @@ T    =  0:dt:Ft;
 Tinj =  2;% time for current injection
 Nt   = length(T);
 %starting voltage and other voltage parameters in V
-V0   =  -20;
+V0   =  -60;% very imp should be chosen keeping in mind reversal voltage of potassium
 V    =  zeros(1,Nt);
 V(1) =  V0;
 Vrest= -50; % Resting Voltage 
-VK   = -72;
+VK   = -72;% reversal voltages
 VNa  =  55;
 Vl   = -50;
 %capacitance/area in uF/cm^2
